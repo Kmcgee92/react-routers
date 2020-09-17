@@ -1,11 +1,14 @@
+// import App from './Components/App';
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Root from './Components/Root'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(
+    <Root />,
+    document.getElementById('root'),
+  );
+});
